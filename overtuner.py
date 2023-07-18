@@ -22,7 +22,7 @@ async def on_message(message):
 
     message_text = message.content.strip().lower()
 
-    if "overtuned" in message_text or "over tuned" in message_text:
+    if "overtuned" in message_text or "over tuned" in message_text or "pushed" in message_text:
         emoji = get(message.guild.emojis, name='clippy')
         if args.react:
             await message.add_reaction(emoji)
